@@ -40,7 +40,7 @@ def respond(voice_data):
         alexa_speak(ctime())
     if 'scholar' in voice_data:
         buscar = record_audio('que quieres buscar?')
-        url = ('https://scholar.google.com/scholar?hl=es&as_sdt=0%2C5&q=' + buscar)
+        url = 'https://scholar.google.com/scholar?hl=es&as_sdt=0%2C5&q=' + buscar
         webbrowser.get().open(url)
         alexa_speak('Esto fue lo que encontre para: ' + buscar)
     if 'academia' in voice_data:
